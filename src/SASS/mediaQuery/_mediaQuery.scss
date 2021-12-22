@@ -1,0 +1,557 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+@media screen and (max-width: 1205px) {
+  .btn--form {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1118px) {
+  .sign-up-card {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    height: 80rem;
+  }
+
+  .testimonials {
+    height: auto;
+    padding: 5rem;
+    background: url("../../images/bg-quotes.png") top 2.5rem left 4rem no-repeat;
+  }
+}
+
+@media screen and (max-width: 1063px) {
+  .features {
+    padding: 0 10%;
+  }
+
+  .aside {
+    &__text {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      padding-right: 1em;
+    }
+  }
+
+  .btn--form {
+    height: 3.1rem;
+    font-size: 1rem;
+    padding: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 3rem;
+
+    .#{&}__logo {
+      width: 10rem;
+    }
+
+    .nav {
+      width: 17.5rem;
+
+      &__item {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .hero {
+    height: 70rem;
+
+    &__title {
+      font-size: 2.7rem;
+    }
+
+    &__info {
+      font-size: 1.3rem;
+    }
+
+    .btn--hero {
+      width: 19rem;
+      height: 3.5rem;
+      font-size: 1.1rem;
+      padding: 1rem 6rem;
+    }
+  }
+
+  .features {
+    .feature-card {
+      &__heading {
+        font-size: 1.3rem;
+      }
+
+      &__info {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .aside {
+    height: 40rem;
+    padding: 8rem 5rem;
+
+    &__text {
+      margin-right: 2.5rem;
+    }
+
+    &__title {
+      font-size: 2.7rem;
+      padding-right: 1em;
+    }
+
+    &__info {
+      font-size: 1rem;
+    }
+
+    .link__text {
+      font-size: 1rem;
+    }
+  }
+
+  .testimonials {
+    .testimonial-card {
+      &__text {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .sign-up {
+    height: 15rem;
+
+    &-card {
+      width: 80%;
+      height: 17rem;
+      top: 5rem;
+      left: 10%;
+      padding: 2.5rem 5rem 2rem;
+
+      &__heading {
+        font-size: 2.2rem;
+      }
+
+      &__info {
+        font-size: 1rem;
+      }
+
+      &__form {
+        .form__input {
+          font-size: 1rem;
+
+          &::placeholder {
+            opacity: 0.7;
+          }
+        }
+
+        .form__error {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 27rem;
+    padding: 10rem 3rem 2rem;
+
+    .#{&}__text {
+      p,
+      li {
+        font-size: 1rem;
+      }
+
+      .social-icons {
+        width: 7rem;
+        margin-top: -0.5rem;
+
+        .icon {
+          height: 26px;
+          width: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .hero {
+    height: 60rem;
+
+    &__img {
+      width: 30rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+      padding: 0.75em 10%;
+    }
+
+    &__info {
+      font-size: 1.3rem;
+      padding: 0 20% 1.6em;
+    }
+  }
+
+  .features {
+    height: auto;
+    @include grid(repeat(4, 1fr), 1fr);
+    gap: 5rem;
+    padding: 0 10% 2.5rem;
+  }
+
+  .aside {
+    height: auto;
+    flex-flow: column nowrap;
+    padding: 6rem 4rem;
+
+    &__img {
+      width: 30rem;
+      margin-bottom: 5rem;
+    }
+
+    &__text {
+      margin-right: 0;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__link::after {
+      width: 10.8rem;
+    }
+  }
+
+  .testimonials {
+    height: auto;
+    @include grid(repeat(3, 1fr), 1fr);
+    gap: 2rem;
+    padding: 5rem 5rem 6rem;
+
+    .testimonial-card {
+      &__user {
+        width: 12rem;
+
+        .user__img {
+          width: 2.5rem;
+        }
+
+        .user__name {
+          font-size: 0.9rem;
+        }
+
+        .user__designation {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .sign-up {
+    height: 20rem;
+
+    &-card {
+      width: 85%;
+      height: 21rem;
+      top: 5rem;
+      left: 7.5%;
+
+      &__info {
+        padding: 0 0 2em;
+      }
+
+      &__form {
+        flex-flow: column nowrap;
+
+        .form__input {
+          width: 22rem;
+          height: 3.1rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .form__error {
+          text-align: center;
+          position: relative;
+          top: -4.3rem;
+          left: 0;
+        }
+
+        .btn--form {
+          width: 22rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: auto;
+    padding: 10rem 3rem 2rem;
+
+    .#{&}__text {
+      flex-flow: column nowrap;
+
+      .location {
+        width: 50%;
+        position: relative;
+
+        &__icon {
+          position: absolute;
+        }
+
+        &__info {
+          margin-top: 0;
+        }
+      }
+
+      .contact {
+        margin-top: 2rem;
+      }
+
+      .footer__links1 {
+        margin: 4.5rem 0 3rem 0;
+      }
+
+      .footer__links2 {
+        margin-bottom: 4.5rem;
+      }
+
+      .social-icons {
+        width: 7.5rem;
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sign-up-card {
+    padding: 2.5rem 2.5rem 2rem;
+  }
+
+  footer {
+    .footer__text {
+      .location {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 629px) {
+  .sign-up-card {
+    height: 22rem;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .hero {
+    height: 58rem;
+
+    &__title {
+      font-size: 1.5rem;
+      padding: 0.75em 15%;
+    }
+
+    &__info {
+      font-size: 1.2rem;
+      padding: 0 15% 1.6em;
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  header {
+    .#{&}__logo {
+      width: 8rem;
+    }
+
+    .nav {
+      width: 14rem;
+
+      &__item {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .sign-up-card {
+    height: auto;
+  }
+
+  footer {
+    padding-top: 12rem;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  footer {
+    padding-top: 14rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero {
+    height: 50rem;
+    background: url(../../images/bg-curvy-mobile.svg) bottom 42% left no-repeat
+      $primary-color-1;
+    background-size: contain;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      top: 64%;
+      width: 100%;
+      height: 18rem;
+      background-color: $primary-color-2;
+    }
+
+    &__img {
+      width: 22rem;
+    }
+
+    &__title {
+      padding: 0.75em 10%;
+    }
+
+    &__info {
+      font-size: 1rem;
+      padding: 0 5% 1.6em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn--hero {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .features {
+    padding: 0 8% 2.5rem;
+
+    .feature-card {
+      &__img {
+        width: 5rem;
+      }
+
+      &__heading {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .aside {
+    padding: 5rem 1.5rem;
+
+    &__img {
+      width: 22rem;
+      margin-bottom: 4rem;
+    }
+
+    &__title {
+      font-size: 1.4rem;
+    }
+  }
+
+  .testimonials {
+    padding: 5rem 7.5% 6rem;
+    background: url("../../images/bg-quotes.png") top 3rem left 10% no-repeat;
+    background-size: 3rem;
+
+    .testimonial-card {
+      padding: 2rem 1.5rem 1.5rem;
+    }
+  }
+
+  .sign-up {
+    &-card {
+      height: auto;
+      width: 90%;
+      left: 5%;
+
+      &__heading {
+        font-size: 1.8rem;
+      }
+
+      &__form {
+        .form__input {
+          width: 100%;
+        }
+
+        .btn--form {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 13rem 1.5rem 2rem;
+
+    .footer__text {
+      .location {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    .#{&}__logo {
+      width: 7rem;
+    }
+
+    .nav {
+      width: 12rem;
+
+      &__item {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .hero {
+    &__title {
+      padding: 0.75em 5%;
+    }
+  }
+
+  .aside__title {
+    font-size: 1.3rem;
+  }
+
+  .sign-up-card {
+    padding: 2.5rem 1.5rem 2rem;
+
+    &__heading {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .aside__title {
+    font-size: 1.25rem;
+  }
+}

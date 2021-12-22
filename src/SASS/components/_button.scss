@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: $neutral-color;
+  background: linear-gradient(to right, $accent-color-1, $accent-color-2);
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background: $accent-color-1;
+  }
+}
+
+.btn--hero {
+  width: 19.7rem;
+  height: 3.8rem;
+  font-size: 1.2rem;
+  padding: 1rem 6rem;
+}
+
+.btn--form {
+  height: 3.3rem;
+  font-size: 1.1rem;
+  padding: 1rem;
+}

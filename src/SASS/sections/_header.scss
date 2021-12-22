@@ -1,0 +1,23 @@
+header {
+  padding: 5rem;
+
+  .nav {
+    width: 18rem;
+    list-style-type: none;
+
+    &__item {
+      width: 4rem;
+      font-size: 1.2rem;
+
+      &:first-child {
+        width: 5rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        font-weight: 700;
+        text-decoration-line: underline;
+      }
+    }
+  }
+}

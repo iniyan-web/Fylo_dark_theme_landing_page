@@ -1,0 +1,14 @@
+@use "../abstracts/mixins" as *;
+
+header,
+.nav,
+.aside,
+.testimonial-card__user,
+.sign-up-card__form,
+.social-icons {
+  @include flex-box(center, space-between);
+}
+
+.footer__text {
+  @include flex-box(flex-start, space-between);
+}

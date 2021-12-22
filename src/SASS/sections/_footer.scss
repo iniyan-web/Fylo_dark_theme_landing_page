@@ -1,0 +1,109 @@
+@use "../abstracts/variables" as *;
+
+footer {
+  height: 31rem;
+  padding: 12rem 4rem 2rem 7rem;
+
+  .#{&}__logo {
+    width: 10rem;
+    padding-bottom: 1.8rem;
+  }
+
+  .#{&}__text {
+    p,
+    li {
+      font-size: 1rem;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 1.5em;
+    }
+
+    .location {
+      flex-basis: 28%;
+
+      &__icon {
+        margin-top: 5px;
+      }
+
+      &__info {
+        display: inline-block;
+        margin-left: 35px;
+        margin-top: -2rem;
+      }
+    }
+
+    .contact {
+      .phone {
+        margin-bottom: 1.2em;
+
+        &__icon {
+          margin-bottom: -2px;
+        }
+
+        &__info {
+          display: inline-block;
+          padding-left: 20px;
+        }
+      }
+
+      .mail {
+        &__icon {
+          margin-bottom: -2px;
+        }
+
+        &__info {
+          display: inline-block;
+          padding-left: 20px;
+        }
+      }
+    }
+
+    .footer__links1 {
+      width: 4.5rem;
+    }
+
+    .footer__links2 {
+      width: 5.5rem;
+    }
+
+    .footer__links1 > *,
+    .footer__links2 > * {
+      list-style-type: none;
+
+      &:hover {
+        cursor: pointer;
+        font-weight: 700;
+      }
+    }
+
+    .social-icons {
+      width: 8rem;
+
+      .icon {
+        display: inline-block;
+        height: 28px;
+        width: 28px;
+        background-color: $neutral-color;
+        mask-size: cover;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $accent-color-1;
+        }
+      }
+
+      .icon--fb {
+        mask: url("../../images/logo-facebook.svg");
+      }
+
+      .icon--twitter {
+        mask: url("../../images/logo-twitter.svg");
+      }
+
+      .icon--instagram {
+        mask: url("../../images/logo-instagram.svg");
+      }
+    }
+  }
+}

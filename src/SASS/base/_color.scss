@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as *;
+
+body {
+  background-color: $primary-color-2;
+}
+
+.sign-up-card {
+  background-color: $primary-color-1;
+}
+
+.testimonial-card {
+  background-color: $primary-color-4;
+}
+
+footer {
+  background-color: $primary-color-3;
+}
+
+h1,
+h2,
+p,
+li {
+  color: $neutral-color;
+}

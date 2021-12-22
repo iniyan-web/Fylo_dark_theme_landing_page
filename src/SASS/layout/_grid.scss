@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as *;
+
+.features {
+  @include grid(repeat(2, 1fr), repeat(2, 1fr));
+  gap: 5rem 11.5rem;
+  align-items: center;
+}
+
+.testimonials {
+  @include grid(1, repeat(3, 1fr));
+  column-gap: 3rem;
+  align-items: center;
+}

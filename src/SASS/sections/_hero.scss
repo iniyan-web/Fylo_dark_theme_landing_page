@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+
+.hero {
+  height: 86.6rem;
+  background: url(../../images/bg-curvy-desktop.svg) bottom -3.5% left no-repeat
+    $primary-color-1;
+  background-size: contain;
+  text-align: center;
+
+  &__img {
+    width: 52.5%;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.3em;
+    padding: 0.75em 20%;
+  }
+
+  &__info {
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    padding: 0 28% 1.6em;
+  }
+}
